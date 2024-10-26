@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Stack } from "expo-router";
-import DownloadSheet from "@/components/BottomSheet";
+import DownloadWallpaper from "@/components/BottomSheet";
 const account = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -15,7 +15,7 @@ const account = () => {
       >
         <Text>Open Download</Text>
       </TouchableOpacity>
-      {open && <DownloadSheet onClose={() => setOpen(false)} />}
+      {open && <DownloadWallpaper onClose={() => setOpen(false)} />}
     </View>
   );
 };
