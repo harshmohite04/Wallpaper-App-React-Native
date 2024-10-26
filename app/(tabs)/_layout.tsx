@@ -6,22 +6,24 @@ import FontAwesome from "@expo/vector-icons/FontAwesome";
 
 const Layout = () => {
   return (
-      <Tabs screenOptions={{ tabBarActiveTintColor: "blue",headerShown:false }}>
-        <Tabs.Screen
-          name="index"
-          options={{
-            title: "For You",
-            tabBarIcon: ({ color }) => (
-              <FontAwesome size={28} name="home" color={color} />
-            ),
-          }}
-        />
+      <Tabs
+        screenOptions={{ tabBarActiveTintColor: "blue", headerShown: false }}
+      >
         <Tabs.Screen
           name="explore"
           options={{
             title: "Explore",
             tabBarIcon: ({ color }) => (
               <FontAwesome size={28} name="cog" color={color} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="index"
+          options={{
+            title: "For You",
+            tabBarIcon: ({ color }) => (
+              <FontAwesome size={28} name="home" color={color} />
             ),
           }}
         />
